@@ -30,16 +30,6 @@ import { MongooseModule } from '@nestjs/mongoose';
 export class AppModule {}
 ```
 
->#### Neon e project create koro and then database connect koro and example.env te paste koro.
-<img width="1597" height="762" alt="image" src="https://github.com/user-attachments/assets/bf2fd0be-b6c5-4f60-9b5b-15ef35768385" />
-
-
-#### `example.env`
-```bash
-DATABASE_URL=''
-```
----
-
 #### Prisma install
 ```bash
 npm install -D prisma@7.10.0
