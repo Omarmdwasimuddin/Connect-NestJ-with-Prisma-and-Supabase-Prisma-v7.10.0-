@@ -1,1 +1,1 @@
-# Connect-NestJ-with-Prisma-and-Supabase-Prisma-v7.10.0-
+## Connect NestJ with Prisma and Supabase (Prisma v7.10.0)
