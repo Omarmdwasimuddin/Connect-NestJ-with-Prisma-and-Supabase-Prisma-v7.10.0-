@@ -47,11 +47,15 @@ npx prisma init
 ```
 ---
 
+>#### Select Direct Connection string and Session pooler
+<img width="714" height="614" alt="image" src="https://github.com/user-attachments/assets/2201f575-8976-468a-afd1-45ea81cc575a" />
 
+>#### Copy Connection string
+<img width="722" height="303" alt="image" src="https://github.com/user-attachments/assets/92ca057a-09eb-434c-b75b-010145e92622" />
 
 
 #### `.env`
->#### DATABASE_URL copy kore paste kore daw.
+>#### Copy kora url paste kore daw.
 ```bash
 DATABASE_URL=''
 ```
