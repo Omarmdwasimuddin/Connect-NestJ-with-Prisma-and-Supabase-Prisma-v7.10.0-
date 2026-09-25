@@ -64,6 +64,7 @@ DATABASE_URL=""
 
 #### `schema.prisma`
 ```bash
+
 generator client {
   provider = "prisma-client"
   output   = "../generated/prisma"
@@ -73,12 +74,21 @@ datasource db {
   provider = "postgresql"
 }
 
+model User {
+  id                String    @id @default(cuid())
+  email             String    @unique
+  password          String    // bcrypt hash, plain text kokhono na
 
-model Book {
-  id String @id @default(uuid())
-  title String
-  author String
-  createdAt DateTime @default(now())
+  // Account lockout tracking
+  failedLoginAttempts Int      @default(0)
+  lockoutUntil        DateTime?
+
+  // Timestamps
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  @@index([email])
+  @@map("users")
 }
 ```
 ---
