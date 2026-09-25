@@ -57,7 +57,7 @@ npx prisma init
 #### `.env`
 >#### Copy kora url paste kore daw.
 ```bash
-DATABASE_URL=''
+DATABASE_URL=""
 ```
 ---
 
@@ -83,28 +83,6 @@ model Book {
 ```
 ---
 
-#### `prisma.config.ts`
-```bash
-npm install dotenv
-```
-```bash
-import "dotenv/config";
-import { defineConfig, env } from "prisma/config";
-
-export default defineConfig({
-  schema: "prisma/schema.prisma",
-
-  migrations: {
-    path: "prisma/migrations",
-  },
-
-  datasource: {
-    url: env("DATABASE_URL"),
-  },
-});
-```
----
-
 #### Create and run your migration & Generate Prisma Client
 ```bash
 npx prisma migrate dev --name init
@@ -112,6 +90,6 @@ npx prisma migrate dev --name init
 ```bash
 npx prisma generate
 ```
-<img width="1350" height="351" alt="image" src="https://github.com/user-attachments/assets/a7c8d829-2048-4ec3-97a5-ec72067b2eaa" />
+<img width="1475" height="268" alt="image" src="https://github.com/user-attachments/assets/5a568af1-411c-4159-a08c-14cc1494d03c" />
 
 ---
